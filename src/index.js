@@ -261,7 +261,7 @@ class AvatarEditor extends React.Component {
       prevState.image.y !== this.state.image.y ||
       prevState.backgroundColor !== this.state.backgroundColor
     ) {
-      this.props.onImageChange()
+      this.props.onImageChange(this.getImage())
     }
   }
 
